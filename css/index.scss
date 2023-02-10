@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+section {
+    position: relative;
+}
+
+.container {
+    max-width: 126rem;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url("/assets/hero-image.jpg");
+    background-size: cover;
+    background-position: 90%;
+    height: 100vh;
+
+    .main-header {
+        height: 8rem;
+        padding: 0 2.4rem;
+    }
+
+    .main-nav {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+        color: black;
+        font-weight: bolder;
+
+        span {
+            color: blue;
+        }
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-items-right {
+        align-items: center;
+    }
+}
+
+.mobile-toggle {
+    font-size: 3.6rem;
+    cursor: pointer;
+    
+    .btn-close {
+        display: none;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2rem;
+    padding: 9rem 4rem 2rem;
+
+    .hero-content-wrap {
+        grid-column: span 4;
+        height: 70rem;
+    }
+}
+
+.primary-title {
+    line-height: 150%;
+    color: rgb(0, 0, 0);
+
+    span {
+        color: rgb(0, 30, 255)
+    }
+}
+
+.hero-description {
+    font-weight: 600;
+    font-size: 2.3rem;
+    line-height: 3.2rem;
+    margin-top: 5rem;
+    color: rgb(0, 0, 0);
+}
+
+.hero-btn-group {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 2rem;
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    a {
+        font-size: 2.3rem;
+    }
+
+    .item1 {
+        padding: 1rem 2rem;
+        background-color: rgb(2, 137, 255);
+        color: white;
+        border-radius: 20%;
+
+        &:hover {
+        background-color: rgb(0, 123, 230);
+        box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, 0.576);
+        }
+    }
+
+    .item2 {
+        padding: 1rem 2rem;
+        background-color: rgb(255, 137, 28);
+        color: white;
+        border-radius: 20%;
+
+        &:hover {
+            background-color: rgb(230, 124, 25);
+            box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, 0.576);
+        }
+    }
+    
+    .item3 {
+        padding: 1rem 2rem;
+        background-color: rgb(11, 11, 11);
+        color: white;
+        border-radius: 20%;
+
+        &:hover {
+            box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, 0.576);
+        }
+    }
+    
+    .item4 {
+        padding: 1rem 2rem;
+        background-color: rgb(255, 0, 0);
+        color: white;
+        border-radius: 20%;
+
+        &:hover {
+            background-color: rgb(225, 3, 3);
+            box-shadow: 0 .8rem 1.5rem rgba(0, 0, 0, 0.576);
+        }
+    }
+}
+
+//About 
+.img {
+    margin-top: 3rem;
+    grid-column: span 4;
+}
+
+.text-group {
+    display: grid;
+    grid-column: span 4;
+    margin-top: 4rem;
+    color: rgb(0, 0, 0);
+
+    .secondary-title {
+        margin-top: 2rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+}
+
+//education
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(246, 248, 206);
+
+    display:inline-block;
+    vertical-align:middle;
+
+    .education-img {
+        margin-left: 1.5rem  ;
+        margin-top: 0.5rem;
+        width:100%;
+    }
+}
+
+.circular-image {
+    grid-column: span 4;
+    margin: 10rem auto 2rem;
+}
+
+.green {
+    background: #2d562d;
+}
+
+.education {
+    .text-group {
+        color: white;
+    }
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 71px;
+}
+
+.wave .shape-fill {
+    fill: rgb(255, 255, 255);
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(/assets/layeredwave.svg);
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 80rem;
+    }
+}
